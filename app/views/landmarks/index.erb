@@ -1,0 +1,8 @@
+<h1>LANDMARKS INDEX!!!</h1>
+
+<% @landmarks.each do |landmark| %>
+  <h3><a href="/landmarks/<%=landmark.id%>"><%= landmark.name %></a></h3>
+  <p>Figure: <%=landmark.figure.name if landmark.figure %></p>
+  <p>Completed: <%=landmark.year_completed %></p>
+  <br/>
+<% end %>
