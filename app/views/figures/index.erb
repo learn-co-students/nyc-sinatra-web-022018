@@ -5,8 +5,9 @@
     <title></title>
   </head>
   <body>
-    <%@landmarks.each do |landmark|%>
-    <li><%=landmark.name%> <%=landmark.year_completed%></li>
+    <%@figures.each do |figure|%>
+    <p> <%= figure.name%>
+    </p>  
     <%end%>
   </body>
 </html>
